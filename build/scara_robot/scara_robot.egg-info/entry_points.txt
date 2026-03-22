@@ -1,0 +1,3 @@
+[console_scripts]
+fk_subscriber = scara_robot.fk_subscriber:main
+

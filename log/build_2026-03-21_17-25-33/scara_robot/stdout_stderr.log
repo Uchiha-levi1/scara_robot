@@ -1,0 +1,41 @@
+running egg_info
+creating build/scara_robot/scara_robot.egg-info
+writing build/scara_robot/scara_robot.egg-info/PKG-INFO
+writing dependency_links to build/scara_robot/scara_robot.egg-info/dependency_links.txt
+writing entry points to build/scara_robot/scara_robot.egg-info/entry_points.txt
+writing requirements to build/scara_robot/scara_robot.egg-info/requires.txt
+writing top-level names to build/scara_robot/scara_robot.egg-info/top_level.txt
+writing manifest file 'build/scara_robot/scara_robot.egg-info/SOURCES.txt'
+reading manifest file 'build/scara_robot/scara_robot.egg-info/SOURCES.txt'
+writing manifest file 'build/scara_robot/scara_robot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build
+creating /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build/lib
+creating /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build/lib/scara_robot
+copying scara_robot/__init__.py -> /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build/lib/scara_robot
+copying scara_robot/fk_subscriber.py -> /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build/lib/scara_robot
+running install
+running install_lib
+creating /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot
+copying /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build/lib/scara_robot/__init__.py -> /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot
+copying /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build/lib/scara_robot/fk_subscriber.py -> /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot
+byte-compiling /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot/fk_subscriber.py to fk_subscriber.cpython-310.pyc
+running install_data
+creating /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/share/ament_index
+creating /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/share/ament_index/resource_index
+creating /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/share/ament_index/resource_index/packages
+copying resource/scara_robot -> /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/share/ament_index/resource_index/packages
+copying package.xml -> /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/share/scara_robot
+creating /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/share/scara_robot/urdf
+copying urdf/scara.urdf.xacro -> /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/share/scara_robot/urdf
+creating /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/share/scara_robot/launch
+copying launch/scara_gazebo.launch.py -> /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/share/scara_robot/launch
+creating /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/share/scara_robot/config
+copying config/scara_controllers.yaml -> /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/share/scara_robot/config
+running install_egg_info
+Copying build/scara_robot/scara_robot.egg-info to /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot-0.0.1-py3.10.egg-info
+running install_scripts
+Installing fk_subscriber script to /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/scara_robot
+writing list of installed files to '/home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/install.log'

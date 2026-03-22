@@ -1,0 +1,56 @@
+[0.000000] (-) TimerEvent: {}
+[0.000607] (scara_robot) JobQueued: {'identifier': 'scara_robot', 'dependencies': OrderedDict()}
+[0.000991] (scara_robot) JobStarted: {'identifier': 'scara_robot'}
+[0.095298] (-) TimerEvent: {}
+[0.196076] (-) TimerEvent: {}
+[0.296891] (-) TimerEvent: {}
+[0.398567] (-) TimerEvent: {}
+[0.499295] (-) TimerEvent: {}
+[0.600197] (-) TimerEvent: {}
+[0.702087] (-) TimerEvent: {}
+[0.804730] (-) TimerEvent: {}
+[0.905279] (-) TimerEvent: {}
+[1.006862] (-) TimerEvent: {}
+[1.107724] (-) TimerEvent: {}
+[1.208153] (-) TimerEvent: {}
+[1.308805] (-) TimerEvent: {}
+[1.409636] (-) TimerEvent: {}
+[1.510073] (-) TimerEvent: {}
+[1.610682] (-) TimerEvent: {}
+[1.711265] (-) TimerEvent: {}
+[1.819133] (-) TimerEvent: {}
+[1.923182] (scara_robot) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', 'build/scara_robot', 'build', '--build-base', '/home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build', 'install', '--record', '/home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/dkndaie/ros2_ws/src/scara_robot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dkndaie', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/dkndaie', 'OLDPWD': '/home/dkndaie/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2832', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/dkndaie/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'dkndaie', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dkndaie', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/dkndaie/ros2_ws/install/my_robot/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/DeliceN:@/tmp/.ICE-unix/2808,unix/DeliceN:/tmp/.ICE-unix/2808', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d914b5b6_e4e3_4a76_91b6_e87a16660bc6', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.B3Z7L3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.100', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/dkndaie/ros2_ws/install/scara_robot:/home/dkndaie/ros2_ws/install/py_pubsub:/home/dkndaie/ros2_ws/install/py_EE_pose:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages:/home/dkndaie/ros2_ws/install/scara_robot/lib/python3.10/site-packages:/home/dkndaie/ros2_ws/install/py_pubsub/lib/python3.10/site-packages:/home/dkndaie/ros2_ws/install/py_EE_pose/lib/python3.10/site-packages:/home/dkndaie/ros2_ws/install/my_robot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.930960] (-) TimerEvent: {}
+[2.039153] (-) TimerEvent: {}
+[2.140235] (-) TimerEvent: {}
+[2.245104] (-) TimerEvent: {}
+[2.347625] (-) TimerEvent: {}
+[2.449414] (-) TimerEvent: {}
+[2.551146] (-) TimerEvent: {}
+[2.631155] (scara_robot) StdoutLine: {'line': b'running egg_info\n'}
+[2.633040] (scara_robot) StdoutLine: {'line': b'writing build/scara_robot/scara_robot.egg-info/PKG-INFO\n'}
+[2.635108] (scara_robot) StdoutLine: {'line': b'writing dependency_links to build/scara_robot/scara_robot.egg-info/dependency_links.txt\n'}
+[2.636109] (scara_robot) StdoutLine: {'line': b'writing entry points to build/scara_robot/scara_robot.egg-info/entry_points.txt\n'}
+[2.636375] (scara_robot) StdoutLine: {'line': b'writing requirements to build/scara_robot/scara_robot.egg-info/requires.txt\n'}
+[2.636921] (scara_robot) StdoutLine: {'line': b'writing top-level names to build/scara_robot/scara_robot.egg-info/top_level.txt\n'}
+[2.639070] (scara_robot) StdoutLine: {'line': b"reading manifest file 'build/scara_robot/scara_robot.egg-info/SOURCES.txt'\n"}
+[2.641010] (scara_robot) StdoutLine: {'line': b"writing manifest file 'build/scara_robot/scara_robot.egg-info/SOURCES.txt'\n"}
+[2.641598] (scara_robot) StdoutLine: {'line': b'running build\n'}
+[2.642043] (scara_robot) StdoutLine: {'line': b'running build_py\n'}
+[2.643145] (scara_robot) StdoutLine: {'line': b'copying scara_robot/fk_subscriber.py -> /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build/lib/scara_robot\n'}
+[2.643534] (scara_robot) StdoutLine: {'line': b'running install\n'}
+[2.644066] (scara_robot) StdoutLine: {'line': b'running install_lib\n'}
+[2.645942] (scara_robot) StdoutLine: {'line': b'copying /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build/lib/scara_robot/fk_subscriber.py -> /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot\n'}
+[2.647101] (scara_robot) StdoutLine: {'line': b'byte-compiling /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot/fk_subscriber.py to fk_subscriber.cpython-310.pyc\n'}
+[2.649310] (scara_robot) StdoutLine: {'line': b'running install_data\n'}
+[2.650133] (scara_robot) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.651706] (-) TimerEvent: {}
+[2.652737] (scara_robot) StdoutLine: {'line': b"removing '/home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot-0.0.1-py3.10.egg-info' (and everything under it)\n"}
+[2.653367] (scara_robot) StdoutLine: {'line': b'Copying build/scara_robot/scara_robot.egg-info to /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot-0.0.1-py3.10.egg-info\n'}
+[2.654948] (scara_robot) StdoutLine: {'line': b'running install_scripts\n'}
+[2.697669] (scara_robot) StdoutLine: {'line': b'Installing fk_subscriber script to /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/scara_robot\n'}
+[2.699539] (scara_robot) StdoutLine: {'line': b"writing list of installed files to '/home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/install.log'\n"}
+[2.752643] (-) TimerEvent: {}
+[2.760375] (scara_robot) CommandEnded: {'returncode': 0}
+[2.789713] (scara_robot) JobEnded: {'identifier': 'scara_robot', 'rc': 0}
+[2.791670] (-) EventReactorShutdown: {}

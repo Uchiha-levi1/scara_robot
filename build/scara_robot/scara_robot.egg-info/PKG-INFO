@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: scara-robot
+Version: 0.0.1
+Summary: FK/IK nodes for end-effector pose
+Home-page: UNKNOWN
+Maintainer: dkndaie
+Maintainer-email: dkndaie@wpi.edu
+License: TODO: License declaration
+Platform: UNKNOWN
+Provides-Extra: test
+
+UNKNOWN
+

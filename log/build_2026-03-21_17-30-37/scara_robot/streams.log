@@ -1,0 +1,24 @@
+[1.930s] Invoking command in '/home/dkndaie/ros2_ws/src/scara_robot': PYTHONPATH=/home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/scara_robot build --build-base /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build install --record /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/install.log --single-version-externally-managed install_data
+[2.630s] running egg_info
+[2.633s] writing build/scara_robot/scara_robot.egg-info/PKG-INFO
+[2.635s] writing dependency_links to build/scara_robot/scara_robot.egg-info/dependency_links.txt
+[2.635s] writing entry points to build/scara_robot/scara_robot.egg-info/entry_points.txt
+[2.636s] writing requirements to build/scara_robot/scara_robot.egg-info/requires.txt
+[2.636s] writing top-level names to build/scara_robot/scara_robot.egg-info/top_level.txt
+[2.638s] reading manifest file 'build/scara_robot/scara_robot.egg-info/SOURCES.txt'
+[2.640s] writing manifest file 'build/scara_robot/scara_robot.egg-info/SOURCES.txt'
+[2.641s] running build
+[2.641s] running build_py
+[2.642s] copying scara_robot/fk_subscriber.py -> /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build/lib/scara_robot
+[2.643s] running install
+[2.643s] running install_lib
+[2.645s] copying /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build/lib/scara_robot/fk_subscriber.py -> /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot
+[2.646s] byte-compiling /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot/fk_subscriber.py to fk_subscriber.cpython-310.pyc
+[2.649s] running install_data
+[2.649s] running install_egg_info
+[2.652s] removing '/home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot-0.0.1-py3.10.egg-info' (and everything under it)
+[2.653s] Copying build/scara_robot/scara_robot.egg-info to /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages/scara_robot-0.0.1-py3.10.egg-info
+[2.654s] running install_scripts
+[2.697s] Installing fk_subscriber script to /home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/scara_robot
+[2.699s] writing list of installed files to '/home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/install.log'
+[2.760s] Invoked command in '/home/dkndaie/ros2_ws/src/scara_robot' returned '0': PYTHONPATH=/home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dkndaie/ros2_ws/src/scara_robot/install/scara_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/scara_robot build --build-base /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/build install --record /home/dkndaie/ros2_ws/src/scara_robot/build/scara_robot/install.log --single-version-externally-managed install_data
