@@ -132,7 +132,7 @@
        
     <visual>
       <geometry>
-        <cylinder radius="0.05" length="0.8"/>
+        <cylinder radius="0.05" length="0.8"/> <!--EE starts at -0.4 Z wrt J3-->
       </geometry>
       <origin xyz="0 0 0"/>
     </visual>

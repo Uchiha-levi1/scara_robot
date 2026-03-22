@@ -9,7 +9,7 @@ import os
 def generate_launch_description():
     urdf_file = os.path.join(
         get_package_share_directory('scara_robot'),
-        'urdf', 'scara.urdf.xacro'
+        'urdf', 'scara_modified.urdf.xacro'
     )
 
     robot_description = Command(['xacro ', urdf_file])
@@ -61,7 +61,7 @@ def generate_launch_description():
                 Node(
                     package='controller_manager',
                     executable='spawner',
-                    arguments=['scara_controller'],
+                    arguments=['joint_trajectory_controller'],
                     output='screen'
                 )
             ]
