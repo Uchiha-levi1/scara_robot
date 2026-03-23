@@ -58,7 +58,8 @@ class fwd_kin(Node):
         p.orientation.z=(r10-r01)/(4*w)
 
         self.pub.publish(p) # publishing the pose from received joint positions
-        
+        self.get_logger().info(f'EE Pose:\n' f'  X: {p.position.x:.4f}\n'f'  Y: {p.position.y:.4f}\n' f'  Z: {p.position.z:.4f}\n'
+    f'  qw: {p.orientation.w:.4f}\n' f'  qx: {p.orientation.x:.4f}\n' f'  qy: {p.orientation.y:.4f}\n' f'  qz: {p.orientation.z:.4f}')
         
 
 def main():

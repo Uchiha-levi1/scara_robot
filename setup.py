@@ -30,10 +30,7 @@ setup(
             'pytest',
         ],
     },
-    entry_points={
-    'console_scripts': [
-    	'fk_subscriber = scara_robot.fk_subscriber:main',
-        ],
-    },
+    entry_points={'console_scripts': ['fk_subscriber = scara_robot.fwd_kin:main','ik_service = scara_robot.inv_kin:main']},
+
     
 )
