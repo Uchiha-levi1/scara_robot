@@ -30,11 +30,11 @@
   </link>
   
     
-  <joint name="joint1" type="revolute"> <!-- Joint 1 that connects base to link1 -->
+  <joint name="joint1" type="fixed"> <!-- was revolute-->
     <parent link="base_link"/>
     <child link="link1"/>
     <origin xyz="0 0 1.5"/> <!--definig link1 at 1.5m from the  base about z-->
-    <axis xyz="0 0 1"/>     <!--defining j1 axis of rotatoin along z axis--> 
+    <axis xyz="0 0 1"/>     <!--defining j1 axis of rotatoin along z axis-->
     <limit lower="-3.14" upper="3.14" effort="100" velocity="1.0"/> <!-- making sure the joint goes from -pi to pi. dummy values for effort and velocity-->
   </joint>
 
@@ -44,17 +44,17 @@
         <geometry>    <!-- adding a joint cylinder that makes it look connected. It is only visual-->
             <cylinder radius="0.12" length="0.12"/>
         </geometry>
-        <origin xyz="0 0 0"/>     
+        <origin xyz="0 0 0"/>
     </visual>
-    
-    
+
+
     <visual><!--Actual link display -->
       <geometry>
         <cylinder radius="0.05" length="0.8"/>
       </geometry>
       <origin xyz="0.4 0 0" rpy="0 1.5708 0"/> <!--rotating it to make it horizontal-->
     </visual>
-    
+
     <collision>
       <geometry>
         <cylinder radius="0.05" length="0.8"/>
@@ -63,13 +63,13 @@
     </collision>
     <inertial>
       <mass value="1.0"/>
-      <inertia ixx="0.01" iyy="0.01" izz="0.01" 
+      <inertia ixx="0.01" iyy="0.01" izz="0.01"
                ixy="0" ixz="0" iyz="0"/>
     </inertial>
   </link>
-  
+
   <!-- Joint 2 -->
-  <joint name="joint2" type="revolute">
+  <joint name="joint2" type="fixed">  <!-- was revolute-->
     <parent link="link1"/>
     <child link="link2"/>
     <origin xyz="0.8 0 0.1"/> <!--0.1 vertical offeset to match the diagram-->
@@ -80,16 +80,15 @@
 
 
 
-    
 
   <!-- Link 2 -->
   <link name="link2">
-  
+
     <visual>
         <geometry>    <!-- adding a joint cylinder that makes it look connected. It is only visual-->
             <cylinder radius="0.12" length="0.24"/>
         </geometry>
-        <origin xyz="0 0 -0.12"/>     
+        <origin xyz="0 0 -0.12"/>
     </visual>
     <visual>  <!--housing for the prismatic jooint-->
       <geometry>
@@ -97,8 +96,8 @@
       </geometry>
       <origin xyz="0.6 0 0"/> <!--offset to match J3-->
     </visual>
-     
-    <visual><!--actual link display --> 
+
+    <visual><!--actual link display -->
       <geometry>
         <cylinder radius="0.05" length="0.6"/>
       </geometry>
@@ -112,11 +111,11 @@
     </collision>
     <inertial>
       <mass value="1.0"/>
-      <inertia ixx="0.01" iyy="0.01" izz="0.01" 
+      <inertia ixx="0.01" iyy="0.01" izz="0.01"
                ixy="0" ixz="0" iyz="0"/>
     </inertial>
   </link>
-  
+
   <!-- Joint 3 -->
   <joint name="joint3" type="prismatic">
     <parent link="link2"/>
@@ -125,11 +124,11 @@
     <axis xyz="0 0 1"/><!--keeping the z axis aligned but negating range to match diagram and have tool come down-->
     <limit lower="-0.5" upper="0" effort="100" velocity="1.0"/>
   </joint>
-  
+
 
   <!-- Link 3-->
   <link name="link3">
-       
+
     <visual>
       <geometry>
         <cylinder radius="0.05" length="0.8"/> <!--EE starts at -0.4 Z wrt J3-->
@@ -144,12 +143,12 @@
     </collision>
     <inertial>
       <mass value="0.5"/>
-      <inertia ixx="0.01" iyy="0.01" izz="0.01" 
+      <inertia ixx="0.01" iyy="0.01" izz="0.01"
                ixy="0" ixz="0" iyz="0"/>
     </inertial>
   </link>
-  
- 
+
+
 
   <!-- ros2_control interface -->
   <ros2_control name="scara_system" type="system">
@@ -182,6 +181,7 @@
       </command_interface>
       <state_interface name="position"/>
       <state_interface name="velocity"/>
+      <state_interface name="effort"/>    <!-- added this so effort would show number instead of nan -->
     </joint>
 
   </ros2_control>
