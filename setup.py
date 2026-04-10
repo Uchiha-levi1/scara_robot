@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
-import os                    
-from glob import glob 
+import os
+from glob import glob
 
 package_name = 'scara_robot'
 
@@ -10,16 +10,16 @@ setup(
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
-            ['resource/' + package_name]),
+         ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'urdf'),
-            glob('urdf/*.urdf.xacro')),
+         glob('urdf/*.urdf.xacro')),
         (os.path.join('share', package_name, 'launch'),
-            glob('launch/*.py')),
+         glob('launch/*.py')),
         (os.path.join('share', package_name, 'config'),
-            glob('config/*.yaml')), 
+         glob('config/*.yaml')),
     ],
-    install_requires=['setuptools','numpy'],
+    install_requires=['setuptools', 'numpy'],
     zip_safe=True,
     maintainer='dkndaie',
     maintainer_email='dkndaie@wpi.edu',
@@ -30,7 +30,8 @@ setup(
             'pytest',
         ],
     },
-    entry_points={'console_scripts': ['fk_subscriber = scara_robot.fwd_kin:main','ik_service = scara_robot.inv_kin:main']},
+    entry_points={'console_scripts': [
+        'fk_subscriber = scara_robot.fwd_kin:main', 'ik_service = scara_robot.inv_kin:main',
+        'joint_effort_controller = scara_robot.joint_effort_controller:main']},
 
-    
 )
